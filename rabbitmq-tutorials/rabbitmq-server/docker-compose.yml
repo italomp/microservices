@@ -1,0 +1,13 @@
+services:
+    rabbitmq-tutorials:
+        image: rabbitmq:3-management
+        container_name: rabbitmq-tutorials
+        restart: always	# reseta o container se a máquina for reiniciada
+        ports:
+            - 5672:5672	# porta do servidor amqp
+            - 15672:15672 # painel administrativo
+        volumes:
+            - .data:/var/lib/rabbitmq
+        environment:
+            - RABBITMQ_DEFAULT_USER=admin
+            - RABBITMQ_DEFAULT_PASS=123456
