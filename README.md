@@ -1,0 +1,1 @@
+Projects to learn microservices with rabbitmq.
