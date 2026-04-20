@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### RabbitMQ ###
+rabbitmq-server/data
+rabbitmq-server/.data

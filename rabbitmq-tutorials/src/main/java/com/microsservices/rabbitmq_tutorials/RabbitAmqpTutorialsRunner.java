@@ -6,7 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ConfigurableApplicationContext;
 
 public class RabbitAmqpTutorialsRunner implements CommandLineRunner {
-    @Value("${spring.tutorial.client.duration:0}")
+    @Value("${spring.tutorial.client.duration:0}")  // Access properties in application.yml
     private int duration;
 
     @Autowired
